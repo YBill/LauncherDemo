@@ -18,12 +18,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LauncherDemo">
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
+            android:label="Launcher"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="Main \u2764 \u2764 \u2764"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.HOME" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

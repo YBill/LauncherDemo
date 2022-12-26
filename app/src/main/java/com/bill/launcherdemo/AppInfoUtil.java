@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
+import android.widget.Toast;
 
 public class AppInfoUtil {
 
@@ -32,7 +33,8 @@ public class AppInfoUtil {
                         new ComponentName(context, MainActivity.class));
             }
         } catch (Throwable e) {
-
+            e.printStackTrace();
+            Toast.makeText(context, "error", Toast.LENGTH_SHORT).show();
         }
     }
 
